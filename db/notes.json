@@ -1,27 +1,12 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text",
-        "id": "8abd7d74-e88a-4dd9-a390-5678762ce0d5"
+        "title": "Passwords",
+        "text": "This is where I would keep my passwords if it was secure.",
+        "id": "293f6e8b-71ee-4e6a-bae2-4904e96d180d"
     },
     {
-        "title": "sdfasdfasdfasd",
-        "text": "asdfasdfa",
-        "id": "6058d53f-ac11-4b9a-8fd9-bc6fd5c2ec51"
-    },
-    {
-        "title": "asdfasdfe asdf",
-        "text": "dfsdfse",
-        "id": "becb9c54-ecf8-4a9f-bb5c-ea3cef411b8b"
-    },
-    {
-        "title": "wefsdf",
-        "text": "sdfsesadf",
-        "id": "16915595-d237-4955-8015-2973ada4e387"
-    },
-    {
-        "title": "This is a note",
-        "text": "and it has stuff in it",
-        "id": "c05043e6-9999-49d4-ae27-895064642176"
+        "title": "Grocery List",
+        "text": "Food\nDrinks",
+        "id": "819e58aa-bea3-4592-a4ed-1dd08e07826e"
     }
 ]
