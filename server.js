@@ -68,7 +68,7 @@ app.post('/api/notes', (req, res) =>{
     });
 
     //respond that the note has been added.
-    res.json("Note added");
+    res.json(newNote);
   }
 });
 
