@@ -1,17 +1,7 @@
 [
     {
-        "title": "Passwords",
-        "text": "This is where I would keep my passwords if it was secure.",
-        "id": "293f6e8b-71ee-4e6a-bae2-4904e96d180d"
-    },
-    {
         "title": "Grocery List",
-        "text": "Food\nDrinks",
-        "id": "819e58aa-bea3-4592-a4ed-1dd08e07826e"
-    },
-    {
-        "title": "This is a new note",
-        "text": "This is the note text",
-        "id": "6b574ce7-0950-40cf-a7c3-69154f0e8983"
+        "text": "Food\nDrink",
+        "id": "d60b9eb3-4e7c-44ad-95bd-dcdeb2965729"
     }
 ]

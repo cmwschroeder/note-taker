@@ -72,6 +72,41 @@ app.post('/api/notes', (req, res) =>{
   }
 });
 
+app.delete('/api/notes/:id', (req, res) => {
+  //save the id of the note we are deleting
+  const id = req.params.id;
+  
+  //read the file so we can find the note in the database to delete it
+  fs.readFile('./db/notes.json', 'utf8', (err, data) => {
+    if(!err) {
+      //convert the data to an array of objects
+      const dbData = JSON.parse(data);
+
+      //loop through the database objects, delete the one with the matching id
+      for(var i = 0; i < dbData.length; i++) {
+        if(dbData[i].id === id) {
+          dbData.splice(i, 1);
+        }
+      }
+
+      //write the new database to the database file
+      fs.writeFile('./db/notes.json', JSON.stringify(dbData, null, 4), (err) => {
+        if(err) {
+          console.error(err);
+        } else {
+          //update our current array of notes so we can send it back
+          sendNotes = dbData;
+        }
+      });
+    }
+    //if there was an error writing to file write the error to the console 
+    else {
+      console.error(err);
+    }
+  });
+  res.json('Note removed');
+});
+
 //if none of the above routes are hit then it will send you to the homepage
 app.get('*', (req, res) =>
   res.sendFile(path.join(__dirname, 'public/index.html'))
