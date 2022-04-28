@@ -72,6 +72,11 @@ app.post('/api/notes', (req, res) =>{
   }
 });
 
+//if none of the above routes are hit then it will send you to the homepage
+app.get('*', (req, res) =>
+  res.sendFile(path.join(__dirname, 'public/index.html'))
+);
+
 //Tell the console where the server is at
 app.listen(PORT, () =>
   console.log(`Serving static asset routes on port ${PORT}!`)
