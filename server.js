@@ -13,6 +13,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
+var sendNotes = notes;
+
 //set the app to use the public folder
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, '/public/')));
 
@@ -23,7 +25,7 @@ app.get('/notes', (req, res) =>
 
 //Get request where the server will send the notes in the note database
 app.get('/api/notes', (req, res) => {
-  res.json(notes);
+  res.json(sendNotes);
 });
 
 //Post request for the notes api, will take in a request body and add that to the notes database with title, text, and a unique id.
@@ -53,6 +55,9 @@ app.post('/api/notes', (req, res) =>{
         fs.writeFile('./db/notes.json', JSON.stringify(dbData, null, 4), (err) => {
           if(err) {
             console.error(err);
+          } else {
+            //update our current array of notes so we can send it back
+            sendNotes = dbData;
           }
         });
       }
