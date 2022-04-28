@@ -30,6 +30,28 @@ npm install
 
 ## Usage
 
+When you open the page you will be at the landing page, with a button that you can click to go to the notes page.  
+
+Picture of landing page:  
+
+![Landing page](./images/screenshot-one.png)  
+
+On the note page you will be able to see all past notes that had been added on the left, they will be displayed by the title. If there are no notes then nothing will be displayed.  
+
+Picture of notes page with a past note brought up:  
+
+![Previous note view](./images/screenshot-two.png)  
+
+To add a new note you can click on the + in the top right, or if you had just gotten to the notes page you will already be on the add note section. Type in your title and note text and a save button will appear in the top left. Click the save icon and your note will be moved to the notes section.
+
+Picture of note page typed up:  
+
+![Adding a note section](./images/screenshot-three.png)  
+
+Picture of note added:  
+
+![View of page with new note added](./images/screenshot-four.png)  
+
 ## Questions
 If you have any questions you can reach me at:  
 Github: cmwschroeder  

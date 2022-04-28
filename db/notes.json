@@ -8,5 +8,15 @@
         "title": "Grocery List",
         "text": "Food\nDrinks",
         "id": "819e58aa-bea3-4592-a4ed-1dd08e07826e"
+    },
+    {
+        "title": "Grocery List",
+        "text": "Food\nDrinks",
+        "id": "d1a2c64b-c571-4e52-8f0a-886f77064f39"
+    },
+    {
+        "title": "This is a new note",
+        "text": "This is the note text",
+        "id": "6b574ce7-0950-40cf-a7c3-69154f0e8983"
     }
 ]
